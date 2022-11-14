@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 45vw bottom 40vh, left 45vw top 40vh;
+    background-position: top 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    overflow: hidden;
+}
+/* main  */
+main {
+    background-color: white;
+    width: 375px;
+    height: 410px;
+    border-radius: 1rem;
+
+}
+/* Start container */
+.container img:first-child {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.container img:last-child {
+    margin-top: -50px;
+    margin-left: 36%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+/* actor  */
+.cv {
+    text-align: center;
+}
+span {
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+.actor h1 {
+    margin-bottom: 0.3rem;
+    font-size: 25px;
+}
+.actor span.city {
+    margin-top: 20px;
+}
+hr {
+    margin-top: 40px;
+    border-color: white
+}
+.activity {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.activity h2 {
+    position: relative;
+    left: 30px;
+    top: 25px;
+}
+.activity span {   
+    position: relative;
+    top: 60px;
+    left: -30px;
+}
+/* End container */
